@@ -1,13 +1,133 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
   <meta charset="utf-8">
-  <title>SupervivenciaPage</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home - Supervivencia</title>
+  <meta name="description" content="Bienvenidos al himalaia">
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+  <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/fonts/brands.min.css">
 </head>
-<body>
-  <app-root></app-root>
+
+<body id="page-top">
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Supervivencia</a>
+      <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1" role="presentation"></li>
+          <li class="nav-item mx-0 mx-lg-1" role="presentation"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container">
+      <h1>Bienvenido</h1>
+      <hr class="star-light">
+      <h2 class="font-weight-light mb-0">Tienda online .... de chaquetas especializadas para ...</h2>
+    </div>
+  </header>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="text-uppercase text-center text-secondary">Modelos</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <a class="d-block mx-auto portfolio-item" data-toggle="modal">
+            <img class="img-fluid" src="assets/img/portfolio/cabin.png">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <a class="d-block mx-auto portfolio-item" data-toggle="modal">
+            <img class="img-fluid" src="assets/img/portfolio/cake.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="bg-primary text-white mb-0">
+    <div class="container">
+      <h2 class="text-uppercase text-center text-white">Sobre nosotros</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">Somos un emprendimiento que nació de .....</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Estamos enfocados en la proteccion de los que queremos y nosotros mismos ...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-uppercase text-center text-secondary mb-0">ConTÁCTANOS</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Nombre"><small class="form-text text-danger help-block"></small></div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Correo"><small class="form-text text-danger help-block"></small></div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Numero celular"><small class="form-text text-danger help-block"></small></div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Mensaje" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
+            </div>
+            <div id="success"></div>
+            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Enviar</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div>
+    <button type="button" class="btn btn-circle btn-md flotante">
+      <a target="_blank" href="https://web.whatsapp.com/send?phone=573059018099&text=Hola%2C+Estoy+interesado+en+las+chaquetas&source&data&app_absent">
+        <i class="fa fa-whatsapp fa-fw" id="whats-icon"></i>
+      </a>
+    </button>
+  </div>
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-uppercase">Redes sociales</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li class="list-inline-item"></li>
+            <li class="list-inline-item"></li>
+            <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-instagram fa-fw"></i></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4 class="text-uppercase mb-4">horario de atención</h4>
+          <p class="lead mb-0"><span>Domingo a Domingo 24 Horas</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright ©&nbsp;Supervivencia 2020</small></div>
+  </div>
+  
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/brands.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="./assets/js/freelancer.js"></script>
 </body>
+
 </html>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "supervivencia-page"
+    }
+  },
+  "defaultProject": "supervivencia-page",
+  "cli": {
+    "analytics": false
+  }
 }
