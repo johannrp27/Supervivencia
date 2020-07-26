@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+#backColMain, #about{
+    background-color: #afb5b4 !important;
+}
 .flotante{
     position: fixed; 
     bottom: 0px; 
@@ -18,9 +21,6 @@
     color: #1cdc60;
 }
 
-.bg-primary{
-    background-color: #afb5b4 !important;
-}
 hr.star-light:after {
     background-color: #2c3e50;
 }
