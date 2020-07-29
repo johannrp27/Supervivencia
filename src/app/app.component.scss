@@ -1,0 +1,29 @@
+#backColMain, #about{
+    background-color: #afb5b4 !important;
+}
+.flotante{
+    position: fixed; 
+    bottom: 0px; 
+    right: 0px; 
+    margin-right: 25px;
+    margin-bottom: 25px;
+    background-color: #1a252f;
+}
+.btn-circle.btn-md {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 35px; 
+    font-size: 38px; 
+    padding: 0px 0px;
+}
+#whats-icon{
+    color: #1cdc60;
+}
+
+hr.star-light:after {
+    background-color: #2c3e50;
+}
+#footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
