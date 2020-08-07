@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'supervivencia-page';
+  jacketImg = 'assets/img/pink_low.jpg';
+  allJackets = 'assets/img/all_low.jpg';
+
 }
+

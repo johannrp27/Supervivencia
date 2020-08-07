@@ -30,3 +30,13 @@ hr.star-light:after {
 #jacketImg {
     width: 400px;
 }
+::ng-deep .ngxImageZoomContainer > img{
+    max-width: 450px !important;
+}
+
+::ng-deep .ngxImageZoomFullContainer.ngxImageZoomLensEnabled{
+    border: 1px transparent !important;
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 100px !important;
+}
