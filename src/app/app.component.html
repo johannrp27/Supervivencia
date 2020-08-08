@@ -24,12 +24,20 @@
   <div class="container">
     <h2 class="text-uppercase text-center text-secondary">Modelos</h2>
     <hr class="star-dark mb-5">
-    <div class="row align-items-center">
-      <div class="col-md-6 col-lg-6">
-          <lib-ngx-image-zoom [thumbImage]=allJackets [magnification]="0.3" [enableLens]="false"></lib-ngx-image-zoom>        <!-- <lib-ngx-image-zoom [thumbImage]=myThumbnail></lib-ngx-image-zoom> -->
+    <div class="row align-items-center" *ngIf="!isMobile">
+      <div class="col-md-6 col-lg-6" >
+        <lib-ngx-image-zoom [thumbImage]=allJackets [magnification]="0.3" [enableLens]="false"></lib-ngx-image-zoom>
       </div>
       <div class="col-md-6 col-lg-6">
         <lib-ngx-image-zoom [thumbImage]=jacketImg [magnification]="0.3" [lensHeight]="150" [circularLens]="true" [lensWidth]="150" [enableLens]="true"></lib-ngx-image-zoom>
+      </div>
+    </div>
+    <div class="row" *ngIf="isMobile">
+      <div class="col-12" >
+        <img src="assets/img/all_low.jpg" id="jacketImg" class="img-fluid">
+      </div>
+      <div class="col-12">
+        <img src="assets/img/pink_low.jpg" id="jacketImg" class="img-fluid">
       </div>
     </div>
   </div>
