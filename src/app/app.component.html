@@ -1,6 +1,6 @@
   <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Supervivencia</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Survivor</a>
       <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" aria-controls="navbarResponsive"
       aria-expanded="false" aria-label="Toggle navigation" id="backColMain">
       <i class="fa fa-bars"></i>
@@ -24,7 +24,7 @@
   <div class="container">
     <h2 class="text-uppercase text-center text-secondary">Modelos</h2>
     <hr class="star-dark mb-5">
-    <div class="row align-items-center" *ngIf="!isMobile">
+    <!-- <div class="row align-items-center" *ngIf="!isMobile">
       <div class="col-md-6 col-lg-6" >
         <lib-ngx-image-zoom [thumbImage]=allJackets [magnification]="0.3" [enableLens]="false"></lib-ngx-image-zoom>
       </div>
@@ -39,7 +39,27 @@
       <div class="col-12">
         <img src="assets/img/pink_low.jpg" id="jacketImg" class="img-fluid">
       </div>
+    </div> -->
+    <ul id="borderUl" class="nav nav-pills justify-content-around">
+      <li class="nav-item" *ngFor="let model of models">
+        <button id="models" class="lead">{{model}}</button>
+      </li>
+    </ul>
+    <div class="row pt-5">
+      <div class="col d-flex">
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+      </div>
+      <div class="col">
+        <p class="lead text-justify">{{descriptions[0]}}</p>
+        <h5>Color:</h5>
+        <button *ngFor="let color of colors" class="btn btn-circle btn-sm" [style.backgroundColor]="color"></button>
+        <h5>Talla:</h5>
+        <button id="sizes" *ngFor="let size of sizes" class="lead">{{size}}</button>
+      </div>
     </div>
+    
+    
+    
   </div>
 </section>
 <section id="about" class="text-white mb-0">
@@ -109,6 +129,10 @@
   </div>
 </footer>
 <div class="copyright py-4 text-center text-white">
-  <div class="container"><small>Copyright ©&nbsp;Supervivencia 2020</small></div>
+  <div class="container"><small>© Supervivencia 2020 - Todos los derechos reservados - Creada por Johann Felipe Rojas &nbsp;</small></div>
 </div>
 
+<!-- Simple gallery 
+  Arrows Auto hide
+  Autoplay
+  Con Preview -->

@@ -16,6 +16,14 @@
     font-size: 38px; 
     padding: 0px 0px;
 }
+.btn-circle.btn-sm {
+    border: #000000 1px solid;
+    width: 28px; 
+    height: 28px; 
+    border-radius: 15px; 
+    margin-bottom: 8px;
+    margin-right: 12px;
+}
 #whats-icon {
     color: #1cdc60;
 }
@@ -39,4 +47,22 @@ hr.star-light:after {
     width: 180px !important;
     height: 180px !important;
     border-radius: 100px !important;
+}
+#models {
+    border: #afb5b4 1px solid;
+    background-color: white;
+    width: 28vh;
+    border-radius: 25px;
+}
+#sizes {
+    border: #afb5b4 1px solid;
+    background-color: white;
+    width: 38px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#borderUl{
+    border: #afb5b4 solid 1px;
+    padding: 5px;
+    border-radius: 15px;
 }
