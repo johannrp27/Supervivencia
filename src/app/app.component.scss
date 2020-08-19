@@ -50,9 +50,12 @@ hr.star-light:after {
 }
 #models {
     border: #afb5b4 1px solid;
-    background-color: white;
     width: 28vh;
     border-radius: 25px;
+    font-size: 1.25rem !important;
+}
+.activeBtn {
+    background-color:#128f76;
 }
 #sizes {
     border: #afb5b4 1px solid;

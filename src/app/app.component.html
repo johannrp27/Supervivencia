@@ -41,8 +41,8 @@
       </div>
     </div> -->
     <ul id="borderUl" class="nav nav-pills justify-content-around">
-      <li class="nav-item" *ngFor="let model of models">
-        <button id="models" class="lead">{{model}}</button>
+      <li class="nav-item" *ngFor="let model of models; let i = index">
+        <button type="button" id="models" class="btn" (click)="setModel(i)" [ngClass]="{activeBtn: isActive(i)}">{{model.name}}</button>
       </li>
     </ul>
     <div class="row pt-5">
@@ -50,15 +50,13 @@
         <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
       <div class="col">
-        <p class="lead text-justify">{{descriptions[0]}}</p>
+        <p class="lead text-justify">{{description}}</p>
         <h5>Color:</h5>
         <button *ngFor="let color of colors" class="btn btn-circle btn-sm" [style.backgroundColor]="color"></button>
         <h5>Talla:</h5>
         <button id="sizes" *ngFor="let size of sizes" class="lead">{{size}}</button>
       </div>
     </div>
-    
-    
     
   </div>
 </section>
@@ -129,7 +127,7 @@
   </div>
 </footer>
 <div class="copyright py-4 text-center text-white">
-  <div class="container"><small>© Supervivencia 2020 - Todos los derechos reservados - Creada por Johann Felipe Rojas &nbsp;</small></div>
+  <div class="container"><small>© Survivor 2020 - Todos los derechos reservados - Creada por Johann Felipe Rojas &nbsp;</small></div>
 </div>
 
 <!-- Simple gallery 
