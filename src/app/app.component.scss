@@ -6,17 +6,29 @@
     margin-bottom: 25px;
     background-color: #1a252f;
 }
+#emptydiv{
+    padding: 42px;
+}
+
+@media (max-width: 576px){
+    #emptydiv{
+        padding: 32px;
+    }
+}
+// @media (max-width: 575px){
+//     #emptydiv{
+//         padding: 35px;
+//     }
+// }
+
+
+
 .btn-circle.btn-md {
     width: 60px; 
     height: 60px; 
     border-radius: 35px; 
     font-size: 38px; 
     padding: 0px 0px;
-}
-@media (min-width: 576px){
-    .clean-block.clean-hero {
-        min-height: 300px !important;
-    }
 }
 #footerp h4, #footerp p{
     color: white;
@@ -40,55 +52,3 @@ small{
     line-height: 2rem;
     border-width: 2px
 }
-// #backColMain, #about{
-    //     background-color: #afb5b4 !important;
-    // }
-    // .btn-circle.btn-sm {
-        //     border: #000000 1px solid;
-        //     width: 28px; 
-        //     height: 28px; 
-        //     border-radius: 15px; 
-        //     margin-bottom: 8px;
-        //     margin-right: 12px;
-        // }
-        
-        
-        
-        // #footer {
-            //     padding-top: 3rem;
-            //     padding-bottom: 3rem;
-            // }
-            // #jacketImg {
-                //     width: 400px;
-                // }
-                // ::ng-deep .ngxImageZoomContainer > img{
-                    //     max-width: 450px !important;
-                    // }
-                    
-                    // ::ng-deep .ngxImageZoomFullContainer.ngxImageZoomLensEnabled{
-                        //     border: 1px transparent !important;
-                        //     width: 180px !important;
-                        //     height: 180px !important;
-                        //     border-radius: 100px !important;
-                        // }
-                        // #models {
-                            //     border: #afb5b4 1px solid;
-                            //     width: 28vh;
-                            //     border-radius: 25px;
-                            //     font-size: 1.25rem !important;
-                            // }
-                            // .activeBtn {
-                                //     background-color:#128f76;
-                                // }
-                                // #sizes {
-                                    //     border: #afb5b4 1px solid;
-                                    //     background-color: white;
-                                    //     width: 38px;
-                                    //     border-radius: 10px;
-                                    //     margin-right: 10px;
-                                    // }
-                                    // #borderUl{
-                                        //     border: #afb5b4 solid 1px;
-                                        //     padding: 5px;
-                                        //     border-radius: 15px;
-                                        // }
