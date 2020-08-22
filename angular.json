@@ -29,14 +29,15 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/bootstrap/css/bootstrap.min.css"              
+              "src/assets/bootstrap/css/bootstrap.min.css",              
+              "src/assets/css/smoothproducts.css"              
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "src/assets/bootstrap/js/bootstrap.min.js",
-              "src/assets/js/freelancer.js",
-              "src/assets/js/checkDevice.js"
+              "src/assets/js/smoothproducts.min.js",
+              "src/assets/js/theme.js"
 
             ]
           },

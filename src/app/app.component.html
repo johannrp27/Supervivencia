@@ -1,136 +1,172 @@
-  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Survivor</a>
-      <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" aria-controls="navbarResponsive"
-      aria-expanded="false" aria-label="Toggle navigation" id="backColMain">
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item mx-0 mx-lg-1" role="presentation"></li>
-        <li class="nav-item mx-0 mx-lg-1" role="presentation"></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<header class="masthead text-white text-center" id="backColMain">
-  <div class="container">
-    <h1>Bienvenido</h1>
-    <hr class="star-light">
-    <h2 class="font-weight-light mb-0">Tienda online .... de chaquetas especializadas para ...</h2>
-  </div>
-</header>
-<section id="portfolio" class="portfolio">
-  <div class="container">
-    <h2 class="text-uppercase text-center text-secondary">Modelos</h2>
-    <hr class="star-dark mb-5">
-    <!-- <div class="row align-items-center" *ngIf="!isMobile">
-      <div class="col-md-6 col-lg-6" >
-        <lib-ngx-image-zoom [thumbImage]=allJackets [magnification]="0.3" [enableLens]="false"></lib-ngx-image-zoom>
-      </div>
-      <div class="col-md-6 col-lg-6">
-        <lib-ngx-image-zoom [thumbImage]=jacketImg [magnification]="0.3" [lensHeight]="150" [circularLens]="true" [lensWidth]="150" [enableLens]="true"></lib-ngx-image-zoom>
-      </div>
-    </div>
-    <div class="row" *ngIf="isMobile">
-      <div class="col-12" >
-        <img src="assets/img/all_low.jpg" id="jacketImg" class="img-fluid">
-      </div>
-      <div class="col-12">
-        <img src="assets/img/pink_low.jpg" id="jacketImg" class="img-fluid">
-      </div>
-    </div> -->
-    <ul id="borderUl" class="nav nav-pills justify-content-around">
-      <li class="nav-item" *ngFor="let model of models; let i = index">
-        <button type="button" id="models" class="btn" (click)="setModel(i)" [ngClass]="{activeBtn: isActive(i)}">{{model.name}}</button>
-      </li>
+<!-- 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+-->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+  <div class="container"><a class="navbar-brand logo" href="#">SURVIVOR</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse"
+    id="navcol-1">
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+      <li class="nav-item" role="presentation"><a class="nav-link" href="catalog-page.html">Catalogo</a></li>
+      <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">Nosotros</a></li>
     </ul>
-    <div class="row pt-5">
-      <div class="col d-flex">
-        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+  </div>
+</div>
+</nav>
+<main class="page landing-page">
+  <!-- Main -->
+  <section class="clean-block clean-hero" style="color:rgba(9, 162, 255, 0.85);">
+    <div class="text">
+      <h2>Bienvenidos.</h2>
+      <p>Tienda virtual de chaquetas bien melasticas .</p>
+      <button class="btn btn-outline-light btn-lg" type="button">Learn More</button>
+    </div>
+  </section>
+  <!-- Catalog  -->
+  <section class="clean-block about-us">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Catalogo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-lg-4">
+          <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/cabin.png">
+            <div class="card-body info">
+              <h4 class="card-title">Chaquetas</h4>
+              <p class="card-text">Esta madre protege de todo, del covid del agua de cualquier cosa.</p>
+              <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/circus.png">
+            <div class="card-body info">
+              <h4 class="card-title">Serie A</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/game.png">
+            <div class="card-body info">
+              <h4 class="card-title">Serie B</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Other  -->
+  <section class="clean-block clean-info dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Info</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6"><img class="img-thumbnail" src="assets/img/safe.png"></div>
+        <div class="col-md-6">
+          <h3>Lorem impsum dolor sit amet</h3>
+          <div class="getting-started-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clean-block features">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Features</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-5 feature-box"><i class="icon-star icon"></i>
+          <h4>Bootstrap 4</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+        </div>
+        <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
+          <h4>Customizable</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+        </div>
+        <div class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
+          <h4>Responsive</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+        </div>
+        <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
+          <h4>All Browser Compatibility</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div>
+    <button type="button" class="btn btn-circle btn-md flotante">
+      <a target="_blank" href="https://wa.me/573059018099?text=Hola%2C+Estoy+interesado+en+las+chaquetas">
+        <i class="fa fa-whatsapp fa-fw" id="whats-icon"></i>
+      </a>
+    </button>
+  </div>
+</main>
+<footer class="page-footer dark">
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col">
+        <h5>Get started</h5>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Downloads</a></li>
+        </ul>
       </div>
       <div class="col">
-        <p class="lead text-justify">{{description}}</p>
-        <h5>Color:</h5>
-        <button *ngFor="let color of colors" class="btn btn-circle btn-sm" [style.backgroundColor]="color"></button>
-        <h5>Talla:</h5>
-        <button id="sizes" *ngFor="let size of sizes" class="lead">{{size}}</button>
+        <h5>About us</h5>
+        <ul>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
       </div>
     </div>
-    
-  </div>
-</section>
-<section id="about" class="text-white mb-0">
+  </div> -->
   <div class="container">
-    <h2 class="text-uppercase text-center text-white">Sobre nosotros</h2>
-    <hr class="star-light mb-5">
-    <div class="row">
-      <div class="col-lg-4 ml-auto">
-        <p class="lead">Somos un emprendimiento que nació de .....</p>
-      </div>
-      <div class="col-lg-4 mr-auto">
-        <p class="lead">Estamos enfocados en la proteccion de los que queremos y nosotros mismos ...</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="contact">
-  <div class="container">
-    <h2 class="text-uppercase text-center text-secondary mb-0">ConTÁCTANOS</h2>
-    <hr class="star-dark mb-5">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Nombre"><small class="form-text text-danger help-block"></small></div>
-          </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Correo"><small class="form-text text-danger help-block"></small></div>
-          </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Numero celular"><small class="form-text text-danger help-block"></small></div>
-          </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Mensaje" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
-          </div>
-          <div id="success"></div>
-          <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Enviar</button></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<div>
-  <button type="button" class="btn btn-circle btn-md flotante">
-    <a target="_blank" href="https://wa.me/573059018099?text=Hola%2C+Estoy+interesado+en+las+chaquetas">
-      <i class="fa fa-whatsapp fa-fw" id="whats-icon"></i>
-    </a>
-  </button>
-</div>
-<footer class="footer text-center" id="footer">
-  <div class="container">
-    <div class="row">
+    <div class="row" id="footerp">
       <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
         <h4 class="text-uppercase">Redes sociales</h4>
         <ul class="list-inline">
-          <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li class="list-inline-item">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#">
+              <i id="social" class="fa fa-facebook fa-fw"></i>
+            </a>
+          </li>
           <li class="list-inline-item"></li>
           <li class="list-inline-item"></li>
-          <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-instagram fa-fw"></i></a></li>
+          <li class="list-inline-item">
+            <a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#">
+              <i id="social" class="fa fa-instagram fa-fw"></i>
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-        <h4 class="text-uppercase mb-4">horario de atención</h4>
+      <div class="col-12 col-sm-6 col-lg-6 col-xl-6"> 
+        <h4 class="text-uppercase mb-4">Horario de atención</h4>
         <p class="lead mb-0"><span>Domingo a Domingo 24 Horas</span></p>
       </div>
     </div>
   </div>
+  <div class="footer-copyright">
+    <small>© Survivor 2020 - Todos los derechos reservados - Creada por Johann Felipe Rojas</small>
+  </div>
 </footer>
-<div class="copyright py-4 text-center text-white">
-  <div class="container"><small>© Survivor 2020 - Todos los derechos reservados - Creada por Johann Felipe Rojas &nbsp;</small></div>
-</div>
-
-<!-- Simple gallery 
-  Arrows Auto hide
-  Autoplay
-  Con Preview -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/smoothproducts.min.js"></script>
+  <script src="assets/js/theme.js"></script> -->
+  
