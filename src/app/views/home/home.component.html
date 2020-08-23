@@ -15,58 +15,25 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
       </div>
       <div class="row justify-content-center">
-        <div class="col-sm-6 col-lg-4">
-          <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/cabin.png">
-            <div class="card-body info">
-              <h4 class="card-title">Chaquetas</h4>
-              <p class="card-text">Esta madre protege de todo, del covid del agua de cualquier cosa.</p>
-              <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/circus.png">
-            <div class="card-body info">
-              <h4 class="card-title">Serie A</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="assets/img/game.png">
-            <div class="card-body info">
-              <h4 class="card-title">Serie B</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-            </div>
+        <div class="col-sm-6 col-lg-4" *ngFor="let item of catalog">
+          <div class="card clean-card text-center" id="card"> 
+            <a class="nostyle" routerLink={{item.route}}>
+              <img class="card-img-top w-100 d-block" src={{item.image}}>
+              <div class="card-body info">
+                <h4 class="card-title">{{item.name}}</h4>
+                <p class="card-text">{{item.description}}</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- Other  -->
-  <section class="clean-block clean-info dark">
+  <section class="clean-block features dark">
     <div class="container">
       <div class="block-heading">
-        <h2 class="text-info">Info</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-md-6"><img class="img-thumbnail" src="assets/img/safe.png"></div>
-        <div class="col-md-6">
-          <h3>Lorem impsum dolor sit amet</h3>
-          <div class="getting-started-info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="clean-block features">
-    <div class="container">
-      <div class="block-heading">
-        <h2 class="text-info">Features</h2>
+        <h2 class="text-info"></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
       </div>
       <div class="row justify-content-center">

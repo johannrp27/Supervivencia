@@ -1,1 +1,38 @@
-<p>catalog works!</p>
+<!-- <div class="row align-items-center" *ngIf="!isMobile">
+  <div class="col-md-6 col-lg-6" >
+    <lib-ngx-image-zoom [thumbImage]=allJackets [magnification]="0.3" [enableLens]="false"></lib-ngx-image-zoom>
+  </div>
+  <div class="col-md-6 col-lg-6">
+    <lib-ngx-image-zoom [thumbImage]=jacketImg [magnification]="0.3" [lensHeight]="150" [circularLens]="true" [lensWidth]="150" [enableLens]="true"></lib-ngx-image-zoom>
+  </div>
+</div>
+<div class="row" *ngIf="isMobile">
+  <div class="col-12" >
+    <img src="assets/img/all_low.jpg" id="jacketImg" class="img-fluid">
+  </div>
+  <div class="col-12">
+    <img src="assets/img/pink_low.jpg" id="jacketImg" class="img-fluid">
+  </div>
+</div> -->
+<section class="clean-block clean-info dark">
+  <div class="container pt-2">
+    <h2 class="text-uppercase text-center text-secondary">Modelos</h2>
+    <ul id="borderUl" class="nav nav-pills justify-content-around">
+      <li class="nav-item" *ngFor="let model of models; let i = index">
+        <button type="button" id="models" class="btn" (click)="setModel(i)" [ngClass]="{activeBtn: isActive(i)}">{{model.name}}</button>
+      </li>
+    </ul>
+    <div class="row pt-5">
+      <div class="col d-flex">
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+      </div>
+      <div class="col">
+        <p class="lead text-justify">{{description}}</p>
+        <h5>Color:</h5>
+        <button *ngFor="let color of colors" class="btn btn-circle btn-sm" [style.backgroundColor]="color"></button>
+        <h5>Talla:</h5>
+        <button id="sizes" *ngFor="let size of sizes" class="lead">{{size}}</button>
+      </div>
+    </div>
+  </div>
+</section>
