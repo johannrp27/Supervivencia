@@ -41,8 +41,25 @@ export class CatalogComponent implements OnInit {
         thumbnailMargin: 20
       },
       {
+        breakpoint: 500,
+        width: '400px',
+        height: '400px',
+        thumbnailsPercent: 40,
+        thumbnailsColumns: 3
+      },
+      {
         breakpoint: 400,
-        preview: false
+        width: '300px',
+        height: '300px',
+        thumbnailsPercent: 35,
+        thumbnailsColumns: 3
+      },
+      {
+        breakpoint: 300,
+        width: '100%',
+        height: '200px',
+        thumbnailsColumns: 2,
+        thumbnailsPercent: 30,
       }
     ];
     this.galleryImages = this.models[0].images;

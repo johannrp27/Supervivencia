@@ -2,7 +2,7 @@ export const models = [
     {
         id: 1,
         name: 'Resistance',
-        description: 'Resistance es una chaqueta diseñada justo para combatir contra las arduas jornadas de exposición al virus. Tiene un super tapabocas bien chido que proteje hasta los ojos, evitando el contagio al maximo, aparte un material antifluidos, evitará que cualquier sustancia, estornudo o liquido se quede pegado a tus prendas. Ideal para usar encima de tu ropa puesto que es muy ligera.',
+        description: 'Resistance es una chaqueta para combatir contra las arduas jornadas de exposición al virus. Tiene tapabocas bien chido que proteje hasta los ojos, evitando el contagio al maximo, aparte un material antifluidos, evitará que cualquier sustancia, estornudo o liquido se quede pegado a tus prendas. Ideal para usar encima de tu ropa puesto que es muy ligera.',
         images : [
             {
                 small: 'assets/img/submarine.png',
